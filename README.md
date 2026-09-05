@@ -24,18 +24,45 @@ Traditional course registration systems can suffer from race conditions when man
 - JUnit 5 (unit testing)
 
 ## Project Structure
+## Project Structure
+
+```
 CourseRegistrationSystem/
+│
 ├── pom.xml
-└── src/
-├── main/java/com/registration/
-│ ├── Main.java
-│ ├── model/ (Student, Admin, Course, Seat, Registration)
-│ ├── exception/ (custom exceptions)
-│ ├── service/ (RegistrationService, StudentRegistrationTask)
-│ ├── db/ (JDBC DBConnector)
-│ └── util/ (ReportExporter)
-└── test/java/com/registration/
-└── RegistrationServiceTest.java
+│
+├── src/
+│   ├── main/java/com/registration/
+│   │   ├── Main.java
+│   │   │
+│   │   ├── model/
+│   │   │   ├── Student.java
+│   │   │   ├── Admin.java
+│   │   │   ├── Course.java
+│   │   │   ├── Seat.java
+│   │   │   └── Registration.java
+│   │   │
+│   │   ├── exception/
+│   │   │   ├── SeatUnavailableException.java
+│   │   │   └── DuplicateRegistrationException.java
+│   │   │
+│   │   ├── service/
+│   │   │   ├── RegistrationService.java
+│   │   │   └── StudentRegistrationTask.java
+│   │   │
+│   │   ├── db/
+│   │   │   └── DBConnector.java
+│   │   │
+│   │   └── util/
+│   │       └── ReportExporter.java
+│   │
+│   └── test/java/com/registration/
+│       └── RegistrationServiceTest.java
+│
+└── screenshots/
+    ├── registration_output.png
+    └── test_results.png
+```
 
 
 ## Steps to Install & Run the Project
@@ -73,7 +100,9 @@ The tests verify:
 
 ## Screenshots
 <img width="975" height="426" alt="image" src="https://github.com/user-attachments/assets/8d4b2a41-1401-4304-a47a-5d59c4c52767" />
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/2ddbd392-6af2-4fd5-bb12-106c28da865a" />
+
+<img width="975" height="691" alt="image" src="https://github.com/user-attachments/assets/6e0dc84c-952f-4d70-8b56-5e4bb93ae6b1" />
+
 
 
 ## Future Enhancements
