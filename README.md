@@ -23,7 +23,7 @@ Traditional course registration systems can suffer from race conditions when man
 - Maven (build & dependency management)
 - JUnit 5 (unit testing)
 
-## Project Structure
+
 ## Project Structure
 
 ```
@@ -99,8 +99,12 @@ The tests verify:
 - A student cannot register twice for the same course
 
 ## Screenshots
+
+#### Registration output
 <img width="975" height="426" alt="image" src="https://github.com/user-attachments/assets/8d4b2a41-1401-4304-a47a-5d59c4c52767" />
 
+
+#### Concurrent Registration
 <img width="975" height="691" alt="image" src="https://github.com/user-attachments/assets/6e0dc84c-952f-4d70-8b56-5e4bb93ae6b1" />
 
 
