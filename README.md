@@ -77,14 +77,14 @@ git clone https://github.com/gauri25bai11091-wq/Programming-in-Java-Evaluated-Pr
 cd Programming-in-Java-Evaluated-Project
 ```
 ## 2.Build the project
-# on Windows
+### on Windows
 .\mvnw.cmd clean package
-# On Linux/macOS:
+### On Linux/macOS:
 ./mvnw clean package
-## 3.Run the application
-# on windows
+### 3.Run the application
+#### on windows
 java -jar target\course-registration-system-1.0.0.jar
-# On Linux/macOS:
+####On Linux/macOS:
 java -jar target/course-registration-system-1.0.0.jar
 
 
