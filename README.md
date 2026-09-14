@@ -18,7 +18,7 @@ Traditional course registration systems can suffer from race conditions when man
 
 ## Technologies / Tools Used
 
-- Java 17+ (Core Java, OOP, Multithreading, Collections)
+- Java 21 or higher (Core Java, OOP, Multithreading, Collections)
 - JDBC with SQLite (`sqlite-jdbc`)
 - Maven (build & dependency management)
 - JUnit 5 (unit testing)
@@ -68,35 +68,32 @@ CourseRegistrationSystem/
 ## Steps to Install & Run the Project
 
 ### Prerequisites
-- Java JDK 17 or higher installed
-- Maven (or an IDE like VS Code / IntelliJ with Maven support)
+- Java JDK 21 or higher
+- Git
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/gauri25bai11091-wq/Programming-in-Java-Evaluated-Project.git
 cd Programming-in-Java-Evaluated-Project
 ```
+## 2.Build the project
+# on Windows
+.\mvnw.cmd clean package
+# On Linux/macOS:
+./mvnw clean package
+## 3.Run the application
+# on windows
+java -jar target\course-registration-system-1.0.0.jar
+# On Linux/macOS:
+java -jar target/course-registration-system-1.0.0.jar
 
-### 2. Open in your IDE
-Open the folder in VS Code or IntelliJ IDEA as a **Maven project**. Dependencies (SQLite JDBC driver, JUnit 5) will be downloaded automatically from `pom.xml`.
 
-### 3. Run the application
-Open `src/main/java/com/registration/Main.java` and run the `main` method.
-
-This will:
-- Set up sample courses with limited seats
-- Simulate multiple students registering concurrently
-- Print registration results (SUCCESS / WAITLISTED) to the console
-- Save all data to a local SQLite database (`registration.db`)
-- Export CSV reports (`registration_report.csv`, `seat_availability_report.csv`)
 
 ## Instructions for Testing
-
-Open `src/test/java/com/registration/RegistrationServiceTest.java` and run the tests (via your IDE's "Run Test" option, or `mvn test` from the terminal).
-
-The tests verify:
-- Exactly `totalSeats` registrations succeed when more students than seats attempt to register concurrently (no double-booking)
-- A student cannot register twice for the same course
+# on windows
+.\mvnw.cmd test
+# On Linux/macOS:
+./mvnw test
 
 ## Screenshots
 
