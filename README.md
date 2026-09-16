@@ -119,9 +119,9 @@ java -jar target/course-registration-system-1.0.0.jar
 
 
 ## Instructions for Testing
-# on windows
+### on windows
 .\mvnw.cmd test
-# On Linux/macOS:
+### On Linux/macOS:
 ./mvnw test
 
 ## Screenshots
