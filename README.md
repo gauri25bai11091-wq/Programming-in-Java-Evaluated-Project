@@ -79,12 +79,17 @@ cd Programming-in-Java-Evaluated-Project
 ## 2.Build the project
 ### on Windows
 .\mvnw.cmd clean package
+##### The Maven Wrapper automatically downloads the required Maven version and project dependencies.
+
+A successful build should display:
+
+#### BUILD SUCCESS
 ### On Linux/macOS:
 ./mvnw clean package
 ### 3.Run the application
 #### on windows
 java -jar target\course-registration-system-1.0.0.jar
-####On Linux/macOS:
+#### On Linux/macOS:
 java -jar target/course-registration-system-1.0.0.jar
 
 
