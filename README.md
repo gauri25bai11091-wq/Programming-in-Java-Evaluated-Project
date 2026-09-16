@@ -29,47 +29,71 @@ Traditional course registration systems can suffer from race conditions when man
 ```
 CourseRegistrationSystem/
 │
-├── pom.xml
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
 │
 ├── src/
-│   ├── main/java/com/registration/
-│   │   ├── Main.java
-│   │   │
-│   │   ├── model/
-│   │   │   ├── Student.java
-│   │   │   ├── Admin.java
-│   │   │   ├── Course.java
-│   │   │   ├── Seat.java
-│   │   │   └── Registration.java
-│   │   │
-│   │   ├── exception/
-│   │   │   ├── SeatUnavailableException.java
-│   │   │   └── DuplicateRegistrationException.java
-│   │   │
-│   │   ├── service/
-│   │   │   ├── RegistrationService.java
-│   │   │   └── StudentRegistrationTask.java
-│   │   │
-│   │   ├── db/
-│   │   │   └── DBConnector.java
-│   │   │
-│   │   └── util/
-│   │       └── ReportExporter.java
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── registration/
+│   │               │
+│   │               ├── Main.java
+│   │               │
+│   │               ├── model/
+│   │               │   ├── Student.java
+│   │               │   ├── Admin.java
+│   │               │   ├── Course.java
+│   │               │   ├── Seat.java
+│   │               │   └── Registration.java
+│   │               │
+│   │               ├── exception/
+│   │               │   ├── SeatUnavailableException.java
+│   │               │   └── DuplicateRegistrationException.java
+│   │               │
+│   │               ├── service/
+│   │               │   ├── RegistrationService.java
+│   │               │   └── StudentRegistrationTask.java
+│   │               │
+│   │               ├── db/
+│   │               │   └── DBConnector.java
+│   │               │
+│   │               └── util/
+│   │                   └── ReportExporter.java
 │   │
-│   └── test/java/com/registration/
-│       └── RegistrationServiceTest.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── registration/
+│                   └── RegistrationServiceTest.java
 │
-└── screenshots/
-    ├── registration_output.png
-    └── test_results.png
+├── diagrams/
+│   ├── architecture_diagram.png
+│   ├── class_diagram.png
+│   ├── er_diagram_v2.png
+│   ├── sequence_diagram.png
+│   └── use_case_diagram.png
+│
+├── .gitignore
+├── mvnw.cmd
+├── pom.xml
+├── README.md
+├── Statement.md
+└── Programming in Java - Evaluated Project.pdf
 ```
 
 
 ## Steps to Install & Run the Project
 
 ### Prerequisites
-- Java JDK 21 or higher
-- Git
+Before running the project, make sure the following are installed:
+
+- **Java JDK 21 or higher**
+- **Git**
+- **Windows operating system** (the provided Maven Wrapper uses `mvnw.cmd`)
+
+> No separate Maven installation is required. The project includes the Maven Wrapper, which automatically downloads the required Maven version and project dependencies.
 
 ### 1. Clone the repository
 ```bash
